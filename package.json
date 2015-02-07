@@ -1,0 +1,26 @@
+{
+  "name": "deep-mixin",
+  "version": "0.0.0",
+  "description": "mixin deep",
+  "main": "deep-mixin.js",
+  "scripts": {
+    "test": "macchiato test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sonewman/deep-mixin.git"
+  },
+  "keywords": [
+    "deep",
+    "mixin"
+  ],
+  "author": "Sam Newman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sonewman/deep-mixin/issues"
+  },
+  "homepage": "https://github.com/sonewman/deep-mixin",
+  "devDependencies": {
+    "macchiato": "^2.5.1"
+  }
+}
