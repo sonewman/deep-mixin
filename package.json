@@ -2,9 +2,9 @@
   "name": "deep-mixin",
   "version": "1.0.0",
   "description": "mixin deep",
-  "main": "deep-mixin.js",
+  "main": "immutable.js",
   "scripts": {
-    "test": "macchiato test.js"
+    "test": "macchiato test"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,9 @@
   },
   "keywords": [
     "deep",
-    "mixin"
+    "mixin",
+    "immutable",
+    "extend"
   ],
   "author": "Sam Newman",
   "license": "MIT",
@@ -21,6 +23,6 @@
   },
   "homepage": "https://github.com/sonewman/deep-mixin",
   "devDependencies": {
-    "macchiato": "^2.5.1"
+    "macchiato": "^4.3.0"
   }
 }

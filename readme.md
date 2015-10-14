@@ -7,12 +7,21 @@ install:
 $ npm install deep-mixin
 ```
 
+#### Version 2.*
+
+As of v2 the default mixin is immutable with the same use case as [xtend](https://github.com/Raynos/xtend).
+
+The behaviour of v1 can be `require`d by using:
+```javascript
+require('deep-mixin/mutable')
+```
+
 Usage:
 ```javascript
 var deepMixin = require('deep-mixin')
 
-var o1 = { a: 1 }
-var o2 = {
+var o1 = {
+  a: 1,
   b: {
     a: 1,
     b: 2,
@@ -22,7 +31,7 @@ var o2 = {
     }
   }
 }
-var o3 = {
+var o2 = {
   b: {
     a: 0,
     c: {
@@ -36,9 +45,8 @@ var o3 = {
   }
 }
 
-deepMixin(o1, o2, o3) // => o1
-/*
-  o1 === {
+deepMixin(o1, o2) /* =>
+  {
     a: 1,
     b: {
       a: 0,
@@ -55,6 +63,5 @@ deepMixin(o1, o2, o3) // => o1
       f: 5
     }
   }
-
 */
 ```
