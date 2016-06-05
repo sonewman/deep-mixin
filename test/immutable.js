@@ -184,4 +184,28 @@ desc('deep-mixin - immutable')
     }
   });
   this.end();
+})
+.it('should override non objects if an object is being mixed in', function () {
+  var o1 = {
+    a: 'abc'
+  };
+
+  var o2 = {
+    a: {
+      b: {
+        c: 3
+      }
+    }
+  };
+
+  this.expect(deepMixin(o1, o2))
+    .deepEquals({
+      a: {
+        b: {
+          c: 3
+        }
+      }
+    });
+  
+  this.end();
 });
